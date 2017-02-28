@@ -14,9 +14,13 @@
   window.$docsify = {
     loadSidebar: true,
     subMaxLevel: 3,
-    search: 'auto',
     repo: 'https://github.com/lanceWan/VueJs',
     name: 'VueJs2从零开始',
+    search: {
+      maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      paths: 'auto',
+      placeholder: 'Type to search',
+    }
   }
 </script>
 <script src="vendor/docsify.js"></script>
